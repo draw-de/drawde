@@ -16,22 +16,9 @@ body {
 }
 .drawde {
     color: white;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    animation-name: drawde;
-    animation-duration: 3s;
-}
-@keyframes drawde {
-    from {opacity: 0;}
-    to {opacity: 100;}
-}
-.welcome{
-    color: white;
     font-size: 70px;
     font-weight: 700;
     letter-spacing: 4px;
-    margin-bottom: 0px;
     position: relative;
     animation: text 3s 1;
 }
@@ -46,12 +33,12 @@ body {
     text-decoration: none;
     color: white;
     filter: invert(100%);
-    animation: text 3s 1;
+    animation-name: links;
+    animation-duration: 3s;
 }
-@keyframes text {
-    0% {
-        opacity: 0;
-    }
+@keyframes links {
+    from {opacity: 0;}
+    to {opacity: 100;}
 }
 .calvert {
     position: fixed;
@@ -61,6 +48,12 @@ body {
     left: 0;
     overflow: hidden;
     z-index: -100;
+    animation-name: calvert;
+    animation-duration: 3s;
+}
+@keyframes calvert {
+    from{opacity: 0;}
+    to {opacity: 100;}
 }
 .calvert-bg {
     position: absolute;
