@@ -1,21 +1,57 @@
 .container {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.container span {
+    text-transform: uppercase;
+    display: block;
 }
 body {
     background-color: black;
     margin: 0;
 }
 .drawde {
-    font-size: 200%;
     color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation-name: drawde;
+    animation-duration: 3s;
+}
+@keyframes drawde {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+.welcome{
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+    position: relative;
+    animation: text 3s 1;
+}
+@keyframes text {
+    0% {
+        opacity: 0;
+        margin-bottom: -70px;
+    }
 }
 .links {
     border-radius: 5px;
     text-decoration: none;
     color: white;
     filter: invert(100%);
+    animation: text 3s 1;
+}
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
 }
 .calvert {
     position: fixed;
@@ -32,7 +68,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(4px);
+    filter: blur(5px);
 }
 @media (min-aspect-ratio: 16/9) {
     .calvert-bg {
@@ -67,4 +103,7 @@ body {
 }
 #twitter:hover {
     opacity: .6
+}
+* {
+    font-family: Arial;
 }
