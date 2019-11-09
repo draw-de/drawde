@@ -32,7 +32,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     filter: blur(4px);
+=======
+    filter: blur(3px);
+>>>>>>> cf1f04206d529549fb2139ba738e21b74e1debcb
 }
 @media (min-aspect-ratio: 16/9) {
     .calvert-bg {
